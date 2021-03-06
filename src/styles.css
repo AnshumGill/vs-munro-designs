@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+html,
+body {
+	font-family: "Raleway", sans-serif !important;
+}
+
+.title-color {
+	color: #a57660 !important;
+}
+
+.bg-f-dark {
+	background-color: rgba(18, 18, 18, 0.95);
+}

@@ -1,0 +1,15 @@
+.card {
+	border-radius: 0 !important;
+}
+
+i {
+	font-size: 6rem;
+}
+
+.card {
+	transition: transform 0.5s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}

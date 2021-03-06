@@ -1,0 +1,11 @@
+.card {
+	margin-top: -3rem;
+}
+
+.team {
+	transition: transform 0.5s;
+}
+
+.team:hover {
+	transform: scale(0.95);
+}
