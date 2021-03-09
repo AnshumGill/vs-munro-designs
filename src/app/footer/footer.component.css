@@ -1,4 +1,20 @@
+@media screen and (max-width: 767px) {
+	.contactCard {
+		border-bottom: 2px solid white;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.contactCard:not(:nth-child(3)) {
+		border-right: 2px solid white;
+	}
+}
+
 .logo-row {
 	background-color: rgba(18, 18, 18, 1);
 	font-size: smaller;
+}
+
+p {
+	margin-bottom: 0 !important;
 }

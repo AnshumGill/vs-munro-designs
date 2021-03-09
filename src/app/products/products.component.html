@@ -4,75 +4,33 @@
 			<p class="display-3 text-center"><span class="title-color">Products</span> that we offer</p>
 		</div>
 	</div>
-	<div class="row my-3 justify-content-center">
+	<div class="row my-3 justify-content-center" *ngFor="let product of products">
 		<div class="d-md-none col-8 productImage d-flex justify-content-center">
-			<img src="../../assets/door.jpg" class="shadow-lg img-fluid" />
-		</div>
-		<div class="d-md-none col-10 bg-f-dark text-light productInfo shadow p-4 border border-1 border-dark">
-			<p class="h1">Product Title</p>
-			<p>
-				Product Information<br />Nullam sit amet neque sed elit cursus luctus. Quisque ultricies felis porttitor maximus pellentesque. Donec
-				lacus tellus, rutrum facilisis justo sit amet, mattis semper lorem. Suspendisse at mattis metus, vitae suscipit turpis. Ut sagittis
-				velit ipsum, nec lacinia quam vestibulum vel. Quisque nec metus imperdiet nisl eleifend porta ac condimentum mi. Mauris tempor tellus
-				lorem, semper convallis ipsum tristique sed.
-			</p>
-			<div class="d-flex flex-row flex-wrap">
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mr-2" href="#">Variant 1</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mx-2" href="#">Variant 2</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none" href="#">Variant 3</a>
-			</div>
-		</div>
-		<div class="d-none d-md-block col-5 productImage">
-			<img src="../../assets/door.jpg" class="shadow-lg img-fluid" />
-		</div>
-		<div class="d-none d-md-flex col-7 bg-f-dark text-light productInfo p-3 shadow-lg flex-column justify-content-center">
-			<p class="h1">Product Title</p>
-			<p>
-				Product Information<br />Nullam sit amet neque sed elit cursus luctus. Quisque ultricies felis porttitor maximus pellentesque. Donec
-				lacus tellus, rutrum facilisis justo sit amet, mattis semper lorem. Suspendisse at mattis metus, vitae suscipit turpis. Ut sagittis
-				velit ipsum, nec lacinia quam vestibulum vel. Quisque nec metus imperdiet nisl eleifend porta ac condimentum mi. Mauris tempor tellus
-				lorem, semper convallis ipsum tristique sed.
-			</p>
-			<div class="d-flex flex-row">
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mr-2" href="#">Variant 1</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mx-2" href="#">Variant 2</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none" href="#">Variant 3</a>
-			</div>
-		</div>
-	</div>
-	<div class="row my-3 justify-content-center">
-		<div class="d-md-none col-8 productImage d-flex justify-content-center">
-			<img src="../../assets/window.jpg" class="shadow-lg img-fluid" />
+			<img src="{{ product.imgUrl }}" class="shadow-lg img-fluid" />
 		</div>
 		<div class="d-md-none col-10 bg-f-dark text-light productInfo p-4 shadow border border-1 border-dark">
-			<p class="h1">Product Title</p>
+			<p class="h1">{{ product.name }}</p>
 			<p>
-				Product Information<br />Nullam sit amet neque sed elit cursus luctus. Quisque ultricies felis porttitor maximus pellentesque. Donec
-				lacus tellus, rutrum facilisis justo sit amet, mattis semper lorem. Suspendisse at mattis metus, vitae suscipit turpis. Ut sagittis
-				velit ipsum, nec lacinia quam vestibulum vel. Quisque nec metus imperdiet nisl eleifend porta ac condimentum mi. Mauris tempor tellus
-				lorem, semper convallis ipsum tristique sed.
+				{{ product.desc }}
 			</p>
+			<hr />
+			<p class="h4">Variants</p>
 			<div class="d-flex flex-row flex-wrap">
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mr-2" href="#">Variant 1</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mx-2" href="#">Variant 2</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none" href="#">Variant 3</a>
+				<p class="p-2 m-1 bg-light title-color fw-bold" *ngFor="let variant of product.variants">{{ variant }}</p>
 			</div>
 		</div>
 		<div class="d-none d-md-block col-5 productImage">
-			<img src="../../assets/window.jpg" class="shadow-lg img-fluid" />
+			<img src="{{ product.imgUrl }}" class="shadow-lg img-fluid" />
 		</div>
 		<div class="d-none d-md-flex col-7 bg-f-dark text-light productInfo p-3 shadow-lg flex-column justify-content-center">
-			<p class="h1">Product Title</p>
+			<p class="h1">{{ product.name }}</p>
 			<p>
-				Product Information<br />Nullam sit amet neque sed elit cursus luctus. Quisque ultricies felis porttitor maximus pellentesque. Donec
-				lacus tellus, rutrum facilisis justo sit amet, mattis semper lorem. Suspendisse at mattis metus, vitae suscipit turpis. Ut sagittis
-				velit ipsum, nec lacinia quam vestibulum vel. Quisque nec metus imperdiet nisl eleifend porta ac condimentum mi. Mauris tempor tellus
-				lorem, semper convallis ipsum tristique sed.
+				{{ product.desc }}
 			</p>
-			<div class="d-flex flex-row">
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mr-2" href="#">Variant 1</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none mx-2" href="#">Variant 2</a>
-				<a class="p-2 bg-light title-color fw-bold text-decoration-none" href="#">Variant 3</a>
+			<hr />
+			<p class="h4">Variants</p>
+			<div class="d-flex flex-row flex-wrap">
+				<p class="p-2 m-1 bg-light title-color fw-bold" *ngFor="let variant of product.variants">{{ variant }}</p>
 			</div>
 		</div>
 	</div>
