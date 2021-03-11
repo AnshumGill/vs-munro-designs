@@ -19,7 +19,19 @@
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "tsconfig.app.json",
 						"aot": true,
-						"assets": ["src/favicon.ico", "src/assets"],
+						"assets": [
+							"src/favicon.ico",
+							"src/assets",
+							"src/android-chrome-192x192.png",
+							"src/android-chrome-256x256.png",
+							"src/apple-touch-icon.png",
+							"src/favicon-16x16.png",
+							"src/favicon-32x32.png",
+							"src/safari-pinned-tab.svg",
+							"src/browserconfig.xml",
+							"src/site.webmanifest",
+							"src/mstile-150x150.png"
+						],
 						"styles": [
 							"src/styles.css",
 							"node_modules/bootstrap/dist/css/bootstrap.min.css",
