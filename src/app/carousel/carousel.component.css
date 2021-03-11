@@ -1,3 +1,7 @@
+.mainCarousel {
+	height: 100vh;
+}
+
 .carousel-item {
 	width: 100vw;
 	height: 100vh;

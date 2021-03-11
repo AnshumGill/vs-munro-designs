@@ -19,7 +19,14 @@
 					</div>
 					<div class="col-12 col-md-6 my-2 my-md-0">
 						<div class="form-floating">
-							<input type="number" class="form-control" id="number" formControlName="MobileNumber" placeholder="9999999999" />
+							<input
+								type="text"
+								class="form-control"
+								id="number"
+								formControlName="MobileNumber"
+								placeholder="9999999999"
+								pattern="/(7|8|9)\d{9}/"
+							/>
 							<label for="number">Mobile Number</label>
 						</div>
 					</div>

@@ -17,7 +17,7 @@ export class ContactUsComponent implements OnInit {
 		this.FormData = this.builder.group({
 			Fullname: new FormControl("", [Validators.required]),
 			Email: new FormControl("", [Validators.compose([Validators.required, Validators.email])]),
-			MobileNumber: new FormControl("", [Validators.compose([Validators.required, Validators.pattern("d{9,10}")])]),
+			MobileNumber: new FormControl("", [Validators.required]),
 			Comment: new FormControl("", [Validators.required]),
 		});
 	}
